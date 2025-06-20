@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextRequestDescription"
+        android:layout_width="386dp"
+        android:layout_height="74dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Talep Açıklaması" />
+
+    <Button
+        android:id="@+id/buttonSubmitRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#8b7d7b"
+
+        android:text="Talebi Yayınla" />
+</LinearLayout>

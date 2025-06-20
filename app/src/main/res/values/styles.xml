@@ -1,0 +1,9 @@
+<resources>
+    <style name="Base.Theme.BitrimeProje" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Tema özelleştirmeleri -->
+
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <style name="Theme.BitrimeProje" parent="Base.Theme.BitrimeProje" />
+</resources>

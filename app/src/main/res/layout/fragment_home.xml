@@ -1,0 +1,83 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF6FB"
+    android:padding="24dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="370dp"
+        android:layout_height="229dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Uygulama Logosu"
+        android:src="@drawable/dogal_afet_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Konum Gönder Butonu -->
+
+    <!-- 112 Acil Butonu -->
+
+    <!-- 155 Polis Butonu -->
+    <Button
+        android:id="@+id/btnCall112"
+        android:layout_width="165dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/rounded_button"
+        android:drawableStart="@drawable/ic_call"
+        android:drawablePadding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingVertical="12dp"
+        android:text="112 Acil Ara"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:backgroundTint="#8b7d7b"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCall155"
+        app:layout_constraintTop_toBottomOf="@id/btnSendLocation" />
+
+
+    <Button
+        android:id="@+id/btnSendLocation"
+        android:layout_width="331dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#8b7d7b"
+        android:paddingVertical="12dp"
+        android:text="Konum Gönder"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLogo" />
+
+    <Button
+        android:id="@+id/btnCall155"
+        android:layout_width="161dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="48dp"
+
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#8b7d7b"
+        android:paddingVertical="12dp"
+        android:text="155 Polis Ara"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/btnCall112"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendLocation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

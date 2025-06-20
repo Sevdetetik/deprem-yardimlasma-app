@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- İsim Girişi -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="İsim"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <!-- Soyisim Girişi -->
+    <EditText
+        android:id="@+id/editTextSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Soyisim"
+        android:inputType="textPersonName"
+        android:background="@drawable/rounded_edittext"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <!-- Telefon Numarası -->
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefon Numarası"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <!-- E-Mail -->
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-Mail"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <!-- Kişi Ekle Butonu -->
+    <Button
+        android:id="@+id/buttonAddContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#8b7d7b"
+
+        android:background="@drawable/rounded_button"
+        android:padding="10dp"
+        android:text="Kişi Ekle" />
+
+    <!-- Kişiyi Kaydet Butonu -->
+
+    <!-- Kişi Listesi (RecyclerView) -->
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_button"
+
+        android:backgroundTint="#8b7d7b"
+
+        android:text="Kişiyi Kaydet" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewContacts"
+        android:layout_width="378dp"
+        android:layout_height="400dp"
+        android:layout_weight="1"
+        android:padding="10dp" />
+
+</LinearLayout>
